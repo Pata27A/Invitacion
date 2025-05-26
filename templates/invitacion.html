@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Invitación de 15 Años</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  body {
+    background-image: url("{{ url_for('static', filename='img/imagen.jpg', _external=True) }}");
+    ...
+  }
+</style>
+
+<body>
+  <div class="container-texto">
+    <h1>🌙 ¡Estás invitado!</h1>
+    <p>Adriana Insfran celebra sus 15 años</p>
+    <p><strong>📅 Viernes 01 de Agosto, 2025</strong></p>
+    <p><strong>🕗 21:00 hs</strong></p>
+    <p><strong>📍 Salón de los Espejos. Fuerza Aérea Paraguaya, Club de Oficiales 5, Gral. Elizardo Aquino Ruta, Luque</strong></p>
+    <p><em>🎩 Dress Code: Casual cómodo</em></p>
+    <p class="recomendacion">Te recomendamos ropa ligera y cómoda para que puedas disfrutar y bailar toda la noche sin preocupaciones.</p>
+
+    <a
+      class="btn btn-ubicacion"
+      href="https://maps.app.goo.gl/RuMiDKo3dot3LaB86"
+      target="_blank"
+      ><i class="fas fa-map-marker-alt"></i> Ver ubicación</a
+    >
+    <a
+      class="btn btn-confirmar"
+      href="https://wa.me/595982297441?text=Confirmo%20mi%20asistencia%20a%20los%2015%20años%20de%20Adriana%20Insfran"
+      target="_blank"
+      ><i class="fab fa-whatsapp"></i> Confirmar asistencia</a
+    >
+  </div>
+</body>
+</html>
